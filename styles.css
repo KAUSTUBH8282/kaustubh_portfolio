@@ -14,11 +14,13 @@ header {
 
 .profile-img {
     border-radius: 50%;
-    width: 150px; /* Set the width you want */
-    height: auto; /* Adjusts the height to maintain aspect ratio */
-    object-fit: cover; /* Keeps the image well-cropped in case of irregular proportions */
-    margin: 0 auto; /* Centers the image horizontally */
+    max-width: 150px; /* Ensures the width doesn't exceed 150px */
+    height: auto;     /* Maintains aspect ratio */
+    object-fit: cover;
+    display: block;   /* Ensures it's block-level, centered */
+    margin: 0 auto;   /* Centers the image horizontally */
 }
+
 
 
 h1 {
